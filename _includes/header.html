@@ -1,0 +1,20 @@
+<header class="site-header">
+
+  <div class="wrap">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+          <a class = "page-link" href = "{{ site.baseurl }}/">BLOGS</a>
+          <a class = "page-link" href = "{{ site.data.params.about_url }}" target = "_blank">ABOUT ME</a>
+          <a class = "page-link" href = "{{ site.data.params.github_url }}" target = "_blank">PROJECTS</a>
+        {% for page in site.pages %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+
+  </div>
+
+</header>

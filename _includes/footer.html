@@ -1,0 +1,28 @@
+<footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class = "footer-icons">
+      <a href = "{{ site.data.params.github_url }}" target = "_blank"><img src = "{{ site.data.resources.github_logo }}"></a>
+      <a href = "{{ site.data.params.google_url }}" target = "_blank"><img src = "{{ site.data.resources.google_logo }}"></a>
+      <a href = "{{ site.data.params.facebook_url }}" target = "_blank"><img src = "{{ site.data.resources.facebook_logo }}"></a>
+    </div>
+
+    <div class="footer-col-1 column">
+      <ul>
+        <li>{{ site.title }}</li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col-3 column">
+      <p class="text">{{ site.description }}</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2014 - {{ site.title }}</p>
+    </div>
+
+  </div>
+
+</footer>
