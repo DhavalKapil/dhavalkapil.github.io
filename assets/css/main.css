@@ -86,6 +86,10 @@ a:visited { color: #205caa; }
   color: #999;
 }
 
+#disqus_thread {
+  padding: 20px 0px;
+}
+
 /* Site footer */
 
 .site-footer {
