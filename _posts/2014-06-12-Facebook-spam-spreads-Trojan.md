@@ -11,7 +11,7 @@ excerpt: "Analysing the trojan and speculating on its functions"
 
 Somewhere back in May, I started getting messages such as this on facebook:
 
-![A screenshot of the message](/assets/images/Facebook-spam-spreads-Trojan/fb\_message\_snipet.png)
+![A screenshot of the message](/assets/images/Facebook-spam-spreads-Trojan/fb_message_snipet.png)
 
 I had around 300 friends then and got almost 8-9 such messages. The interesting thing was that those people were completely unrelated. According to me some of them didn't know each other. Suspecting some trick I decided to analyze the file.
 
