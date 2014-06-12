@@ -4,6 +4,7 @@ layout: post
 title: "Facebook spam spreads Trojan"
 author: "Dhaval Kapil"
 excerpt: "Analysing the trojan and speculating on its functions"
+keywords: facebook, trojan, malware, message, analysis, java, dll, minerd, bitcoin
 
 ---
 

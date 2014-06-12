@@ -7,7 +7,11 @@
     <meta name = "viewport" content = "width=device-width">
 
     <meta name = "author" content = "Dhaval Kapil">
-    <meta name = "keywords" content = "dhaval, kapil, vampire, iit roorkee, sdslabs, developer, geek, programmer, pianist, keyboardist, github, jekyll">
+    {% if page.keywords %}
+    <meta name = "keywords" content = "{{ page.keywords }} , {{ site.keywords }}">
+    {% else %}
+    <meta name = "keywords" content = "{{ site.keywords }}">
+    {% endif %}
     {% if page.excerpt %}
     <meta name = "description" content = "{{ page.excerpt }}">
     {% else %}
