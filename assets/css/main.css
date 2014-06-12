@@ -285,8 +285,10 @@ a:visited { color: #205caa; }
 .post-content ol { padding-left: 20px; }
 
 .post-content img {
-  text-align: center;
-  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 pre,
@@ -298,6 +300,8 @@ pre,
   -moz-border-radius: 3px;
   border-radius: 3px;
   font-size: 15px;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 
 .post code { padding: 1px 5px; }
