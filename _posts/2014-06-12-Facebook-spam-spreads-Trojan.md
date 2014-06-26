@@ -22,14 +22,14 @@ I had around 300 friends then and got almost 8-9 such messages. The interesting 
 
 I downloaded the `zip` file and verified it's type using linux `file` command. Then after unzipping the file I found a `jar` file inside it. _Just for reference a jar file is a java archive file which can be run by simply double clicking it_. It is equivalent to `exe` file in C/C++. Another important point to note is that a `jar` file is infact a `zip` file(only the extension has been changed). So the next step I did was to extract the `jar` file. Doing that produced a single class file alongwith the usual META-INF
     
-    vampire@linux:~/Documents/analysis$ file Form\_0320.ZIP 
+    vampire@linux:~/Documents/analysis$ file Form\_0320.ZIP
     Form\_0320.ZIP: Zip archive data, at least v2.0 to extract
-    vampire@linux:~/Documents/analysis$ unzip Form\_0320.ZIP 
+    vampire@linux:~/Documents/analysis$ unzip Form\_0320.ZIP
     Archive:  Form\_0320.ZIP
       inflating: Form\_0320.jar           
     vampire@linux:~/Documents/analysis$ file Form\_0320.jar
     Form\_0320.jar: Zip archive data, at least v2.0 to extract
-    vampire@linux:~/Documents/analysis$ unzip Form\_0320.jar 
+    vampire@linux:~/Documents/analysis$ unzip Form\_0320.jar
      Archive:  Form\_0320.jar
        creating: META-INF/
       inflating: META-INF/MANIFEST.MF    
