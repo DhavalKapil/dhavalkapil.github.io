@@ -299,9 +299,10 @@ pre,
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 18px;
   white-space: pre-line;
   word-wrap: break-word;
+  font-family: "Courier New" Courier monospace;
 }
 
 .post code { padding: 1px 5px; }
@@ -309,7 +310,14 @@ pre,
 .post ul,
 .post ol { margin-left: 1.35em; }
 
-.post pre code { border: none; }
+.post pre {
+  padding: 25px 40px;
+}
+
+.post pre code { 
+  border: none; 
+  padding-left: 0px;
+}
 
 /* terminal */
 .post pre.terminal {
