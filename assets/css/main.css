@@ -396,9 +396,13 @@ pre,
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 #back-to-top {
-    display: none;
-    position: fixed;
-  }
+  display: none;
+  position: fixed;
+}
+
+#back-to-top img:hover {
+  cursor: pointer;
+}
 
 
 /* media queries */
