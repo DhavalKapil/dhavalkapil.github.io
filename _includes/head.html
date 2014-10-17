@@ -19,7 +19,7 @@
     {% endif %}
 
     <meta property = "og:title" content = "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property = "og:url" content = "{{ site.url }}{{ page.url }}">
+    <meta property = "og:url" content = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% if page.date %}
     <meta property = "article:published_time" content = "{{ page.date | date: "%Y-%m-%d" }}">
     <meta property = "og:type" content = "article">
