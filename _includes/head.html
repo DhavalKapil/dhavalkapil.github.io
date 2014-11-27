@@ -18,6 +18,7 @@
     <meta name = "description" content = "{{ site.description }}">
     {% endif %}
 
+    <!-- Facebook Open Graph meta data -->
     <meta property = "og:title" content = "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property = "og:url" content = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% if page.date %}
@@ -28,6 +29,19 @@
     <meta property = "og:image" content = "{{ site.url }}{{ site.data.resources.avatar }}">
     
     <meta property="fb:admins" content="100006280205504">
+
+    <!-- Twitter Card meta data -->
+    <meta name = "twitter:card" content = "summary_large_image">
+    <meta name = "twitter:title" content = "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name = "twitter:image" content = "{{ site.url }}{{ site.data.resources.avatar }}">
+    <meta name = "twitter:creator" content = "@dhaval_kapil">
+    <meta name = "twitter:site" content = "@dhaval_kapil">
+    <meta name = "twitter:url" content = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% if page.excerpt %}   
+    <meta name = "twitter:description" content = "{{ page.excerpt }}">
+    {% else %}
+    <meta name = "twitter:description" content = "{{ site.description }}">
+    {% endif %}
 
     <link rel = "canonical" href = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
