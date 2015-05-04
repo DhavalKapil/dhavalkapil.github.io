@@ -1,0 +1,13 @@
+service reader
+{
+	type		= UNLISTED
+	protocol	= tcp
+	socket_type	= stream
+	port		= 8001
+	wait		= no
+
+	server		= /usr/sbin/chroot
+	server_args	= /home/vampire/reader/ ./reader
+	
+	user		= root
+}
