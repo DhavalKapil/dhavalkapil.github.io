@@ -38,7 +38,7 @@ Setting up a `chroot` jail is easy though time consuming.
 
 > ## Walkthrough - `reader`
 
-We'll write a simple service to that takes the name of a file as the input and pritns the first 1024 bytes of the file.
+We'll write a simple service to that takes the name of a file as the input and prints the first 1024 bytes of the file.
 
 > ### 1. Write source program for the service
 
@@ -98,7 +98,7 @@ This is a sample output on my machine and it may vary for yours. So basically I 
       |-- reader.c
       |-- reader
 
-To test that you have successfully created a jail test this:
+To test that you have successfully created a jail try this:
 
 > chroot . ./reader
 
