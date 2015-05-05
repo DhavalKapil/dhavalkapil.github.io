@@ -102,7 +102,7 @@ To test that you have successfully created a jail try this:
 
 > chroot . ./reader
 
-You won't be able to view any file outside the reader's directory. If you are then you did something wrong!
+You won't be able to view any file outside the reader's directory. If you can then you did something wrong!
 
 > ### 3. Adding a configuration file in xinetd for `reader`
 
@@ -160,6 +160,6 @@ Hurray! We have successfully run our service securely. To test it run the follow
 
 > nc localhost 8001
 
-Change the IP/port accordingly. You should be able to run the program correctly. Also try giving different source file path names. You won't be able to access any file other than in `/home/vampire/reader/`. Also keep in mind to flush the buffer so that the text is displayed instantly.
+Change the IP/port accordingly. You should be able to run the program correctly. Also try giving different source file path names. You won't be able to access any file other than one in `/home/vampire/reader/`. Also keep in mind to flush the buffer so that the text is displayed instantly.
 
 Comments are welcome. If you know of a better way to do this, feel free to tell me!
