@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Combining-chroot-and-xinetd"
+title: "Combining chroot and xinetd"
 author: "Dhaval Kapil"
 excerpt: "Running network services in a chroot jail"
 keywords: xinetd, chroot, jail, network, daemon, linux, service
