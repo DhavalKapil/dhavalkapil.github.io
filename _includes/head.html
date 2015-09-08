@@ -20,6 +20,11 @@
 
     <!-- Facebook Open Graph meta data -->
     <meta property = "og:title" content = "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    {% if page.excerpt %}   
+    <meta name = "og:description" content = "{{ page.excerpt }}">
+    {% else %}
+    <meta name = "og:description" content = "{{ site.description }}">
+    {% endif %}
     <meta property = "og:url" content = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% if page.date %}
     <meta property = "article:published_time" content = "{{ page.date | date: "%Y-%m-%d" }}">
