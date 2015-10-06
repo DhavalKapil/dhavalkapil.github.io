@@ -120,3 +120,5 @@ Backward compatibility was enforced by using the RR (Resource Record) construct 
 In all DNSSEC provides authentication and integrity to the DNS. This helps in preventing many attacks. Cache poisoning and Client flooding attacks are prevented with the addition of source authentication. Even Zone File Compromise attack is mitigated. Note however that DNSSEC does not provide any security against information leakage.
 
 **Note**: I recently did a talk about DNS Security in my college. Slides can be found [here](https://speakerdeck.com/dhavalkapil/dns-security).
+
+**Edit**: Lately there has been work on minimizing information leakage. [This](http://w3.antd.nist.gov/pubs/892-papers/WorkingPapers-WERB-approved/DNS-information-leakage-Rose-Nakassis.pdf) is a good resource. Thanks to [captnemo](https://captnemo.in/) for pointing this out.
