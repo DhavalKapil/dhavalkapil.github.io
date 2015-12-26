@@ -1,4 +1,6 @@
-highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["fenced_code_blocks", "tables"]
 permalink: blogs/:title/
 title: Dhaval Kapil
 email: dhavalkapil@gmail.com
