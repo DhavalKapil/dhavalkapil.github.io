@@ -3,7 +3,7 @@
 layout: post
 title: "Shellcode Injection"
 author: "Dhaval Kapil"
-excerpt: "Injection shellcode by overflowing the buffer - Demonstration"
+excerpt: "Injecting shellcode by overflowing the buffer - Demonstration"
 keywords: shellcode, injection, crafting, aslr, tutorial, demonstration, vulnerability, assembly, beginner
 
 ---
