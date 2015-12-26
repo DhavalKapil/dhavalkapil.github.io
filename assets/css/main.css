@@ -277,7 +277,7 @@ a:visited { color: #205caa; }
   padding-left: 20px;
   font-size: 18px;
   opacity: .6;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   margin: 30px 0;
 }
 
@@ -300,9 +300,17 @@ pre,
   -moz-border-radius: 3px;
   border-radius: 3px;
   font-size: 18px;
-  white-space: pre-line;
   word-wrap: break-word;
   font-family: "Courier New" Courier monospace;
+}
+
+li {
+  margin-bottom: 30px;
+}
+
+li pre {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .post code { padding: 1px 5px; }
