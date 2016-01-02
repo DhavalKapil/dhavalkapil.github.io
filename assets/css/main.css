@@ -403,16 +403,6 @@ li pre {
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
-#back-to-top {
-  display: none;
-  position: fixed;
-}
-
-#back-to-top img:hover {
-  cursor: pointer;
-}
-
-
 /* media queries */
 /* ----------------------------------------------------------*/
 
