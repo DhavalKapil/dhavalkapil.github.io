@@ -342,3 +342,5 @@ Even if your machine does not support as big a NOP sled as I used, use binary se
 |   100000              |   5.96046447754e-03                    |  168
 
 In this blog I've used the return address(on the stack) to control the execution flow of the program. There are many other possible places for attacking.
+
+**Note**: I did a talk and a demo about Shellcode Injection in my college as part of 'Recent trends in Network Security'. Slides can be found [here](https://speakerdeck.com/dhavalkapil/shellcode-injection).
