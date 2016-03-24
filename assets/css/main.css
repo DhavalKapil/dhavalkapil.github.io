@@ -301,7 +301,10 @@ pre,
   border-radius: 3px;
   font-size: 18px;
   word-wrap: break-word;
-  white-space: normal;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
   font-family: "Courier New" Courier monospace;
 }
 
