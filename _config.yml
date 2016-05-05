@@ -1,6 +1,9 @@
-markdown: redcarpet
-redcarpet:
-  extensions: ["fenced_code_blocks", "tables"]
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 permalink: blogs/:title/
 title: Dhaval Kapil
 email: dhavalkapil@gmail.com

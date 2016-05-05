@@ -24,63 +24,63 @@ You have access to a system with an executable binary that is owned by root, has
 
 1. First create a user `test` without root privilages:
 
-    ```sh
-    [sudo] adduser test
-    ```
+   ```sh
+   [sudo] adduser test
+   ```
 
 2. Create `vuln.c` in the home directory for `test` user.
 
-    ```c
-    #include <stdio.h>
-    #include <string.h>
+   ```c
+   #include <stdio.h>
+   #include <string.h>
 
-    void func(char *name)
-    {
-        char buf[100];
-        strcpy(buf, name);
-        printf("Welcome %s\n", buf);
-    }
+   void func(char *name)
+   {
+       char buf[100];
+       strcpy(buf, name);
+       printf("Welcome %s\n", buf);
+   }
 
-    int main(int argc, char *argv[])
-    {
-        func(argv[1]);
-        return 0;
-    }
-    ```
+   int main(int argc, char *argv[])
+   {
+       func(argv[1]);
+       return 0;
+   }
+   ```
         
-    [Here](/assets/files/Shellcode-Injection/vuln.c) is the link to the above mentioned code.
+   [Here](/assets/files/Shellcode-Injection/vuln.c) is the link to the above mentioned code.
 
-    _Note: You might need `sudo` while accessing the home directory for `test` user._
+   _Note: You might need `sudo` while accessing the home directory for `test` user._
 
 3. Let's compile it.
   
-    > _For 32 bit systems_
+   > _For 32 bit systems_
 
-    ```sh
-    [sudo] gcc vuln.c -o vuln -fno-stack-protector -z execstack
-    ```
+   ```sh
+   [sudo] gcc vuln.c -o vuln -fno-stack-protector -z execstack
+   ```
 
-    > _For 64 bit systems_
+   > _For 64 bit systems_
 
-    ```sh
-    [sudo] gcc vuln.c -o vuln -fno-stack-protector -m32 -z execstack
-    ```
+   ```sh
+   [sudo] gcc vuln.c -o vuln -fno-stack-protector -m32 -z execstack
+   ```
 
-    `-fno-stack-protector` disabled the stack protection. Smashing the stack is now allowed. `-m32` made sure that the compiled binary is 32 bit. You may need to install some additional libraries to compile 32-bit binaries on 64-bit machines. `-z execstack` makes the stack executable(we're going to run the shellcode right?). You can download the binary generated on my machine [here](/assets/files/Shellcode-Injection/vuln).
+   `-fno-stack-protector` disabled the stack protection. Smashing the stack is now allowed. `-m32` made sure that the compiled binary is 32 bit. You may need to install some additional libraries to compile 32-bit binaries on 64-bit machines. `-z execstack` makes the stack executable(we're going to run the shellcode right?). You can download the binary generated on my machine [here](/assets/files/Shellcode-Injection/vuln).
 
 4. Setting up permissions
 
-    ```sh
-    [sudo] chown root:test vuln
-    [sudo] chmod 550 vuln
-    [sudo] chmod u+s vuln
-    ```
+   ```sh
+   [sudo] chown root:test vuln
+   [sudo] chmod 550 vuln
+   [sudo] chmod u+s vuln
+   ```
 
-    Confirm by listing the file, `ls -l vuln`
-    
-    ```sh    
-    -r-sr-x--- 1 root test 7392 Dec 22 00:27 vuln
-    ```
+   Confirm by listing the file, `ls -l vuln`
+
+   ```sh    
+   -r-sr-x--- 1 root test 7392 Dec 22 00:27 vuln
+   ```
 
 > ### What is ASLR?
 
