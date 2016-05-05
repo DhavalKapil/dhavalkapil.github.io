@@ -32,38 +32,42 @@ Much of the client was influenced by the official clients, mainly [elasticsearch
 
 > #### Using the Javascript client to get a document
 
-      var elasticsearch = require('elasticsearch');
+```javascript
+  var elasticsearch = require('elasticsearch');
 
-      var client = new elasticsearch.Client({
-        host: 'localhost:9200',
-        log: 'trace'
-      });
+  var client = new elasticsearch.Client({
+    host: 'localhost:9200',
+    log: 'trace'
+  });
 
-      client.get({
-        index: 'my_index',
-        type: 'my_type',
-        id: 'my_dox'
-      }, function (error, response) {
-        // ...
-      });
+  client.get({
+    index: 'my_index',
+    type: 'my_type',
+    id: 'my_dox'
+  }, function (error, response) {
+    // ...
+  });
+```
 
 > #### Using the Lua client to get a document
 
-      local elasticsearch = require "elasticsearch"
+```lua
+  local elasticsearch = require "elasticsearch"
 
-      local client = elasticsearch.client{
-        hosts = {
-          { host = "localhost",
-            port = 9200
-          }
-        }
+  local client = elasticsearch.client{
+    hosts = {
+      { host = "localhost",
+        port = 9200
       }
+    }
+  }
 
-      local data, err = client:get{
-        index = "my_index",
-        type = "my_type",
-        id = "my_doc"
-      }
+  local data, err = client:get{
+    index = "my_index",
+    type = "my_type",
+    id = "my_doc"
+  }
+```
 
 ### Using Object Oriented Programming
 
