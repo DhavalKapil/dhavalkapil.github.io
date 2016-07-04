@@ -3,8 +3,8 @@
 layout: post
 title: "Lua Version Manager"
 author: "Dhaval Kapil"
-excerpt: "Introducing luaver, the lua version manager"
-keywords: lua, luarocks, luajit, version, manage, luaver, environment, install, switch
+excerpt: "Introducing luaver. Ease your Lua, Luarocks, LuaJIT installation"
+keywords: lua, luarocks, luajit, version, manage, luaver, environment, install, installing, switch
 
 ---
 
