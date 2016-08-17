@@ -1,22 +1,22 @@
 ---
 
 layout: post
-title: "Elasticsearch Lua (II)"
+title: "Elasticsearch Lua II"
 author: "Dhaval Kapil"
 excerpt: "Google Summer of Code (GSoC) 2016 report"
 keywords: elasticsearch, lua, client, development, framework, REST, json, gsoc, google summer of code, open source
 
 ---
 
-This post is about my [GSOC](https://summerofcode.withgoogle.com/projects/#5987313834262528) project, that I worked on during summer, 2016. I worked on adding a test suite and documentation for [elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua).
+This post is about my [GSoC](https://summerofcode.withgoogle.com/projects/#5987313834262528) project, that I worked on during summer, 2016. I worked under the [LabLua](http://www.lua.inf.puc-rio.br/gsoc/projs2016.html) organization on adding a test suite and improving documentation for elasticsearch-lua. [elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua).
 
 > ## Introduction
 
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) is a distributed, scalable and full-text search engine based on Lucene. It provides an HTTP web interface and handles JSON documents. It is presently [ranked 1](http://db-engines.com/en/ranking/search+engine) in the category of 'Search engines'.
 
-[elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua) is a client for Elasticsearch that provides a wrapper over the REST interface for the Lua Programming Language. I developed it last as part of [GSOC 2015](https://www.google-melange.com/archive/gsoc/2015/orgs/lablua/projects/dhavalkapil.html) with my mentor [Pablo Musa](http://www.inf.puc-rio.br/~pmusa).
+[elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua) is a client for Elasticsearch that provides a wrapper over the REST interface for the Lua Programming Language. I developed it as part of [GSoC 2015](https://www.google-melange.com/archive/gsoc/2015/orgs/lablua/projects/dhavalkapil.html) with my mentor [Pablo Musa](http://www.inf.puc-rio.br/~pmusa).
 
-My GSOC project this year was entitled 'Improve elasticsearch-lua tests and builds' and was a continuation of the work that I had done last year. Apart from adding a test suite for `elasticsearch-lua` and making it robust, I also decided to work on the documentation of the code.
+My GSoC project this year was entitled 'Improve elasticsearch-lua tests and builds' and was a continuation of the work that I had done last year. Apart from adding a test suite for `elasticsearch-lua` and making it robust, I also decided to work on the documentation of the code.
 
 > ## Test suite for elasticsearch-lua
 
@@ -32,7 +32,7 @@ There are many different modules within `elasticsearch-lua`. For every such modu
 
 * [Travis](https://travis-ci.org/DhavalKapil/elasticsearch-lua) was chosen for continuous integrations. Everytime code is pushed, a build is triggered on travis and unit tests are run. Success or failure status is reported back.
 
-* A number of bugs(pertaining to url forming and rockspec file) were found by running the tests. All were fixed.
+* A number of bugs (pertaining to generating of target url for endpoint, and listing source files in the rockspec file) were found by running the tests. All were fixed.
 
 The diff of changes due to unit tests can be seen [here](https://github.com/dhavalkapil/elasticsearch-lua/compare/5bab5d0a73ecee82db6f64584a0cc38176e3d216...dhavalkapil:61220c1625253e8d72a3e2e1cc108e7b5db01af4).
 
@@ -42,7 +42,7 @@ Apart from the test of every component individually, it is equally important tha
 
 * Integration tests involve calling an API function in a real environment and testing parameters at every point. [Wrappers](https://github.com/DhavalKapil/elasticsearch-lua/blob/master/tests/lib/operations.lua) for some API functions were developed so as to avoid repeated code.
 
-* Elasticsearch is a search engine. There was a need for a 'big' dataset. Data available freely from [www.githubarchive.org](https://www.githubarchive.org/) was chosen to be used. A mirror is maintained [here](https://dhavalkapil.com/elasticsearch-test-dataset/dataset/2015-01-01-15.json.gz). The dataset is not a part of the main repository due to  size, so it is downloaded on the fly while running tests on travis.
+* We believe that using real data for integration tests is always a good practice. Also, the test dataset should stress the system a bit and, thus, it should not be very small. Therefore, we opted by using part of the data available freely from [www.githubarchive.org](https://www.githubarchive.org/). A mirror is maintained [here](https://dhavalkapil.com/elasticsearch-test-dataset/dataset/2015-01-01-15.json.gz). The dataset is not a part of the main repository due to  size, so it is downloaded on the fly while running tests on travis.
 
 * Common operations (such as search, index, get, delete and bulk) were tested in a single run. These operations are intermixed together.
 
@@ -50,7 +50,7 @@ The diff of changes due to integration tests can be seen [here](https://github.c
 
 > ### Stress Tests
 
-Stress tests involve rigorous testing of elasticsearch-lua. By having these tests, the client will be able to prove its stability in an effective manner.
+Stress tests involve testing elasticsearch-lua limits. By having these tests, the client will be able to prove its stability in an effective manner.
 
 * A separate framework for stress testing was designed, considering that it might take a few hours to finish. In short, every successful (unit + integration tests) build triggers a new build, which runs the stress tests, provided that no such build is already running.
 
@@ -60,7 +60,7 @@ The diff of changes due to stress tests can be seen [here](https://github.com/dh
 
 > ## Documentation
 
-Having a good documentation is very important for any library. It helps developers to understand functionalities without having to investigate the code. Moreover, it helps the library adoption as new developers can use it as a guide to get started. For this very purpose, I opted to invest  a lot of time in the documentation. However, initially, this was not a task for the GSOC project. Realizing its importance, I decided to complete it and added it to my timeline.
+Having a good documentation is very important for any library. It helps developers to understand functionalities without having to investigate the code. Moreover, it helps the library adoption as new developers can use it as a guide to get started. Although this was initially not a task for the GSOC project, after realizing its importance, I opted to invest a lot of time in the documentation and added it to the GSoC project timeline.
 
 > ### Guides
 
@@ -72,7 +72,7 @@ The API Documentation lists all possible functions provided by the elasticsearch
 
 The diff of changes pertaining to documentation can be seen [here](https://github.com/dhavalkapil/elasticsearch-lua/compare/04d33706890a64c4247ad73e1430fad6f8b8d681...dhavalkapil:9fa3d1a7cde5fa357b6c54e69cae2a0ba6c8d0d9).
 
-> ## Additional tasks(Not part of GSOC)
+> ## Additional tasks (Not part of GSoC)
 
 Apart from the tasks mentioned above, I worked on the following as well:
 
@@ -88,13 +88,13 @@ While working with `elasticsearch-lua`, I had to frequently switch between diffe
 
 4. Sometimes, these code changes broke the entire rock. In such cases, I had to remove all existing rocks, rebuild luarocks and then reinstall the needed rocks.
 
-Also, I was already familiar with NodeJS and Ruby and understood how such problems were addressed by [nvm](https://github.com/creationix/nvm) and [rvm](https://github.com/rvm/rvm).
+As I was already familiar with NodeJS and Ruby and understood how such problems were addressed by [nvm](https://github.com/creationix/nvm) and [rvm](https://github.com/rvm/rvm), I decided to create a similar tool for lua, and that is how [luaver](https://dhavalkapil.com/luaver) was born.
 
-This motivated me to create a similar tool for lua, and that is how [luaver](https://dhavalkapil.com/luaver) was born. I wrote a separate [blog](/blogs/Lua-Version-Manager) post about luaver. Help [donate](https://gratipay.com/luaver/) to luaver. Initially, I didn't expect to spend much time on it and figured that I could manage both GSoC and develop luaver simultaneously. However, at some point in time, I got too involved in luaver which resulted in me getting one week behind the timeline that I had proposed for GSoC. Nevertheless, I covered it up soon.
+I also wrote a separate [blog](/blogs/Lua-Version-Manager) post about luaver and you can support the project [here](https://gratipay.com/luaver/). Initially, I didn't expect to spend much time on it and figured that I could manage both GSoC and develop luaver simultaneously. However, at some point in time, I got too involved in luaver which resulted in me getting one week behind the timeline that I had proposed for GSoC. Nevertheless, I covered it up soon.
 
 > ### Updating elasticsearch-lua
 
-It is important that the client implements all the features provided by Elasticsearch. Also, Elasticsearch is evolving a lot releasing in a fast pace, so it is important that clients are also up-to-date. Some features, though not much important, were missing and the client version was 1.6 while Elasticsearch is in 2.3. Therefore, I decided to update the library and add missing features as well. Presently, I’m still working on this part.
+It is important that the client implements all the features provided by Elasticsearch. Also, Elasticsearch is evolving a lot and releasing in a fast pace, so it is important that clients are also up-to-date. Some features were missing and the client version was 1.6 while Elasticsearch is in 2.3. Therefore, I decided to update existing features and implement some missing features.
 
 > ## Benefits of working on the same project for two consecutive years
 
