@@ -8,13 +8,13 @@ keywords: elasticsearch, lua, client, development, framework, REST, json, gsoc, 
 
 ---
 
-This post is about my [GSoC](https://summerofcode.withgoogle.com/projects/#5987313834262528) project, that I worked on during summer, 2016. I worked under the [LabLua](http://www.lua.inf.puc-rio.br/gsoc/projs2016.html) organization on adding a test suite and improving documentation for elasticsearch-lua. [elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua).
+This post is about my [GSoC](https://summerofcode.withgoogle.com/projects/#5987313834262528) project, that I worked on during summer, 2016. I worked under the [LabLua](http://www.lua.inf.puc-rio.br) organization on adding a test suite and improving documentation for elasticsearch-lua. [elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua).
 
 > ## Introduction
 
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) is a distributed, scalable and full-text search engine based on Lucene. It provides an HTTP web interface and handles JSON documents. It is presently [ranked 1](http://db-engines.com/en/ranking/search+engine) in the category of 'Search engines'.
 
-[elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua) is a client for Elasticsearch that provides a wrapper over the REST interface for the Lua Programming Language. I developed it as part of [GSoC 2015](https://www.google-melange.com/archive/gsoc/2015/orgs/lablua/projects/dhavalkapil.html) with my mentor [Pablo Musa](http://www.inf.puc-rio.br/~pmusa).
+[elasticsearch-lua](https://github.com/DhavalKapil/elasticsearch-lua) is a client for Elasticsearch that provides a wrapper over the REST interface for the Lua Programming Language. I developed it as part of [GSoC 2015](https://www.google-melange.com/archive/gsoc/2015/orgs/lablua/projects/dhavalkapil.html) with my mentor [Pablo Musa](https://github.com/pmusa).
 
 My GSoC project this year was entitled 'Improve elasticsearch-lua tests and builds' and was a continuation of the work that I had done last year. Apart from adding a test suite for `elasticsearch-lua` and making it robust, I also decided to work on the documentation of the code.
 
