@@ -87,7 +87,7 @@ It is crucial to understand a few points before talking about the attack.
     
    Exceptions do exist such as the LIKE clause. Note that this trimming of trailing whitespaces is done mostly during 'string comparison'. This is because, [internally](https://support.microsoft.com/en-in/kb/316626), SQL pads one of the strings with whitespaces so that their length matches before comparing them.
 
-2. In any INSERT query, SQL enforces minimum length constraints on `varchar(n)` by just using the first 'n' characters of the string(in case the length of the string is more than 'n' characters). e.g. if a particular column has a length constraint of '5' characters, then inserting 'vampire' will result in the insert of only 'vampi'.
+2. In any INSERT query, SQL enforces maximum length constraints on `varchar(n)` by just using the first 'n' characters of the string(in case the length of the string is more than 'n' characters). e.g. if a particular column has a length constraint of '5' characters, then inserting 'vampire' will result in the insert of only 'vampi'.
 
 Now, let us setup a testing database to demonstrate the attack.
 
