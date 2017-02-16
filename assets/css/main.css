@@ -312,6 +312,10 @@ li {
   margin-bottom: 30px;
 }
 
+ol li ul li {
+  margin-bottom: 5px;
+}
+
 li pre {
   margin-top: 15px;
   margin-bottom: 15px;
