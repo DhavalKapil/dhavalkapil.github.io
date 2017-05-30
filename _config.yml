@@ -4,6 +4,8 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
+gems:
+  - jekyll-sitemap
 permalink: blogs/:title/
 title: Dhaval Kapil
 email: dhavalkapil@gmail.com
