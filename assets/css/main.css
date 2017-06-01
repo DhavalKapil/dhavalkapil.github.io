@@ -16,6 +16,60 @@ body {
   background-color: #fdfdfd;
 }
 
+.home-body {
+  border-top: 15px solid #222;
+  border-bottom: 15px solid #222;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  height: initial;
+  min-height: 100%;
+}
+
+#home-content {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+
+#profile {
+  background-image: url(../images/home.png);
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 1;
+  height: 220px;
+  width: 220px;
+  margin: 0px auto;
+}
+
+.home-body h1 {
+  font-family: 'Roboto-Thin', sans-serif;
+  font-size: 2.5em;
+}
+
+.home-body h3 {
+  font-family: 'Aileron-Thin', sans-serif;
+  font-size: 1.1em;
+}
+
+#profile-links {
+  margin: 30px;
+}
+
+#profile-links .home-links {
+  font-family: 'AvenirNext-Regular', sans-serif;
+  padding: 10px;
+  color: #555;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#profile-links .home-links:hover {
+  color: #bbb;
+}
+
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
 a         { color: #2a7ae2; text-decoration: none; }
@@ -156,6 +210,9 @@ a:visited { color: #205caa; }
   width: calc(41.875%);
 }
 
+.home-icons {
+}
+
 .site-footer ul { list-style: none; }
 
 .site-footer li,
@@ -182,7 +239,6 @@ a:visited { color: #205caa; }
   padding-bottom: 120px;
   background-color: #fff;
 }
-
 
 /* Home styles */page-content
 /* ----------------------------------------------------------*/
@@ -514,3 +570,15 @@ li pre {
   font-style: normal;
   font-weight: normal;
   src: url("../font/avenirnext-bold.woff"); }
+
+@font-face {
+  font-family: 'Aileron-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Aileron-Thin.otf"); }
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Roboto-Thin.ttf"); }
