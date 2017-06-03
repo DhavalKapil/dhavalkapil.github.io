@@ -81,6 +81,90 @@ body {
   color: #bbb;
 }
 
+#content {
+  font-family: 'AvenirNext-Regular', Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.projects {
+  font-size: 0.8em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.project {
+  margin: 70px 0px;
+  padding-bottom: 20px;
+}
+
+.project-name {
+  padding: 10px;
+  font-size: 1.3em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.project-name a {
+  color: #205caa;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #205caa;
+}
+
+.project-name a:visited {
+  color: #205caa;
+}
+
+.project-name a:hover {
+  color: #508cda;
+}
+
+.star-button {
+  float: right;
+}
+
+.project-description {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.project-description li {
+  margin-bottom: 5px;
+}
+
+.project-tech {
+  max-width: 80%;
+}
+
+.project-tech span {
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.project-tech .project-padding {
+  visibility: hidden;
+}
+
+.project-source a {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  float: right;
+  margin-right: 2%;
+  position: relative;
+  bottom: 13px;
+  color: #205caa;
+}
+
+.project-source a:visited {
+  color: #205caa;
+}
+
+.project-source a:hover {
+  color: #508cda;
+}
+
+
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
 a         { color: #2a7ae2; text-decoration: none; }

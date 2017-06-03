@@ -1,0 +1,64 @@
+- name: "icmptunnel"
+  github:
+    repo: "icmptunnel"
+  url: "https://dhavalkapil.com/icmptunnel/"
+  source_url: "https://github.com/dhavalkapil/icmptunnel"
+  description:
+    - Tunnels IP traffic over ICMP - bypass firewalls and captive portals
+    - Can be used to make an encrypted communication channel
+    - Exploites RFC 792's allowance of ICMP packets of arbitrary data length
+    - Covered by <a href="https://pentestmag.com/download/power-shell-for-penetration-testing/">PenTest Magazine</a>
+  tech: "Raw sockets in C, linux 'tun' driver, iptables, route"
+
+- name: "Heap Exploitation (a short book)"
+  github:
+    repo: "heap-exploitation"
+  url: "https://heap-exploitation.dhavalkapil.com/"
+  source_url: "https://github.com/dhavalkapil/heap-exploitation"
+  description:
+    - A short book on internals of glibc's memory allocation techniques and its exploitation
+    - An in depth analysis of glibc's source code, particularly <a href="http://repo.or.cz/glibc.git/blob/HEAD:/malloc/malloc.c">malloc.c</a>
+    - Listing of <b>all</b> security checks performed by glibc
+    - Demonstration of various attacks possible on glibc's heap
+
+- name: "luaver (Lua Version Manager)"
+  github:
+    repo: "luaver"
+  url: "https://dhavalkapil.com/luaver/"
+  source_url: "https://github.com/dhavalkapil/luaver"
+  description:
+    - Command line tool in shell similar to <a href="https://github.com/creationix/nvm">nvm</a> and <a href="https://rvm.io/">rvm</a>
+    - Manage and switch easily between different versions of Lua, LuaJIT and Luarocks
+    - Easily maintain a different environment in separate terminal sessions
+  tech: "POSIX compatible shell scripting, Lua"
+
+- name: "Backdoor"
+  url: "https://backdoor.sdslabs.co/"
+  description:
+    - Capture the Flag styled always online wargame with frequent computer security competitions
+    - Developed the entire backend of the website, see <a href="https://blog.sdslabs.co/2014/10/launching-backdoor">blog</a>
+    - Developed a secure sandboxed environment to run vulnerable challenges, see <a href="https://dhavalkapil.com/blogs/Combining-chroot-and-xinetd/">blog</a>
+    - Designed <a href="https://backdoor.sdslabs.co/users/vampire">25 challenges</a> ranging from web, binary and cryptography
+    - Hosted various international competitions and managed the server
+    - 5000+ registered users, >200 submissions every week
+  tech: "PHP(MVC), MySQL, Memcache, chroot, xinetd, system administration"
+
+- name: "elasticsearch-lua"
+  github:
+    repo: "elasticsearch-lua"
+  url: "https://luarocks.org/modules/dhavalkapil/elasticsearch"
+  source_url: "https://github.com/dhavalkapil/elasticsearch-lua"
+  description:
+    - A low level client for Elasticsearch in Lua
+    - Maintains multiple connections to Elasticsearch server using load balancing algorithms
+    - 2000+ <a href="https://luarocks.org/modules/dhavalkapil/elasticsearch">downloads</a>
+  tech: "Lua, HTTP, REST API, Elasticsearch, Unit Testing"
+
+
+- name: "Falcon"
+  url: "https://sdslabs.co/"
+  description:
+    - A central and secure OAuth 2.0 server for all applications by <a href="https://sdslabs.co/">SDSLabs</a>
+    - OAuth tokens shared using the Client Credentials Grant
+    - A custom session management system to maintain user state
+  tech: "OAuth 2.0, PHP(MVC), MySQL, Redis"
