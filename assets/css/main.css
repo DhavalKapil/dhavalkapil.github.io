@@ -94,7 +94,7 @@ body {
 }
 
 .project {
-  margin: 70px 0px;
+  margin: 40px 0px;
   padding-bottom: 20px;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .project-tech {
-  max-width: 80%;
+  margin-left: 14px;
 }
 
 .project-tech span {
