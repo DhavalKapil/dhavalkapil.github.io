@@ -91,6 +91,13 @@ body {
   margin: 20px;
 }
 
+@media screen and (max-width: 550px) {
+  #content #profile {
+    float: initial;
+    margin: 20px auto;
+  }
+}
+
 #content p {
   margin: 20px 0px;
 }
@@ -98,7 +105,7 @@ body {
 #content p a {
   color: #000;
   padding-bottom: 1px;
-  border-bottom: 1px dashed;
+  border-bottom: 1px solid #aaa;
 }
 
 #content p a:visited {
