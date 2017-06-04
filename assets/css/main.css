@@ -83,11 +83,34 @@ body {
 
 #content {
   font-family: 'AvenirNext-Regular', Helvetica, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+
+#content #profile {
+  float: left;
+  margin: 20px;
+}
+
+#content p {
+  margin: 20px 0px;
+}
+
+#content p a {
+  color: #000;
+  padding-bottom: 1px;
+  border-bottom: 1px dashed;
+}
+
+#content p a:visited {
+  color: #000;
+}
+
+#content p a:hover {
+  color: #777;
 }
 
 .projects {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-top: 40px;
   margin-bottom: 20px;
   list-style: none;
