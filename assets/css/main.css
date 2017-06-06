@@ -194,6 +194,31 @@ body {
   color: #508cda;
 }
 
+#contact-details {
+  margin-top: 20px;
+}
+
+#contact-details li {
+  margin: 10px;
+}
+
+#gpg-fingerprint {
+  display: block;
+  margin: 20px;
+  font-weight: bold;
+}
+
+#contact-details a {
+  color: #205caa;
+}
+
+.contact-details a:visited {
+  color: #205caa;
+}
+
+.contact-details a:hover {
+  color: #508cda;
+}
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
