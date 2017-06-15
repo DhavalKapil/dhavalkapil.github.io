@@ -260,6 +260,7 @@ a:visited { color: #205caa; }
 .site-title,
 .site-title:hover,
 .site-title:visited {
+  font-family: 'AvenirNext-Regular';
   display: block;
   color: #333;
   font-size: 26px;
@@ -400,6 +401,7 @@ a:visited { color: #205caa; }
 .posts li { margin-bottom: 30px; }
 
 .posts .post-link {
+  font-family: 'AvenirNext-Regular';
   font-size: 24px;
   letter-spacing: -1px;
   line-height: 1.5;
@@ -432,6 +434,7 @@ a:visited { color: #205caa; }
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {
+  font-family: 'AvenirNext-Regular';
   font-size: 42px;
   letter-spacing: -1.75px;
   line-height: 1;
