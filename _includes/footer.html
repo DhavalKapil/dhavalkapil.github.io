@@ -4,11 +4,12 @@
 
     {% include footer_icons.html %}
 
-    <div class="footer-text">
-      <p class="text">{{ site.link-description }}</p>
-    </div>
-
     <div class="footer-bottom">
+      <p class="text">
+        <a href = "{{ site.data.params.sitemap_url }}">sitemap</a> |
+        <a href = "{{ site.data.params.contact_url }}">contact</a> |
+        <a href = "{{ site.data.params.disclaimer_url }}">disclaimer</a>
+      </p>
       <p>© 2017 - {{ site.title }}</p>
     </div>
 

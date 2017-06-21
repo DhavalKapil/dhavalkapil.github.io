@@ -1,2 +1,3 @@
 User-agent: *
-Disallow:
+Disallow: /resume.pdf
+Sitemap: https://dhavalkapil.com/sitemap.xml

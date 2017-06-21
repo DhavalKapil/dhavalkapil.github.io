@@ -8,10 +8,9 @@ gems:
   - jekyll-sitemap
 permalink: blogs/:title/
 title: Dhaval Kapil
-email: dhavalkapil@gmail.com
-description: Blog of Dhaval Kapil - Developer at SDSLabs, student at IIT Roorkee
-keywords: dhaval, kapil, vampire, iit roorkee, sdslabs, developer, geek, programmer, pianist, keyboardist, github, jekyll
-link-description: Blog of Dhaval Kapil - Developer at <a href = 'https://team.sdslabs.co/' target = '_blank'>SDSLabs</a>, student at IIT Roorkee
+email: me@dhavalkapil.com
+description: Blog of Dhaval Kapil, graduate student at Georgia Tech
+keywords: dhaval, kapil, vampire, gatech, iit, roorkee, sdslabs, security, developer, geek, programmer, pianist, github
 baseurl: ""
 url: https://dhavalkapil.com
 name: Dhaval Kapil\'s blog

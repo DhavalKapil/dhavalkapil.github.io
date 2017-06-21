@@ -86,6 +86,11 @@ body {
   font-size: 1.1em;
 }
 
+#content .title {
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
 #content #profile {
   float: left;
   margin: 20px;
@@ -377,7 +382,20 @@ a:visited { color: #205caa; }
   clear: both;
   text-align: center;
   margin: 0px;
+  margin-top: 12px;
   padding: 0px;
+}
+
+.footer-bottom p {
+  padding-top: 3px;
+}
+
+.footer-bottom a {
+  color: #828282;
+  padding: 0px 4px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 
@@ -499,6 +517,11 @@ a:visited { color: #205caa; }
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.post-footer {
+  text-align: right;
+  border-top: 2px #aaa solid;
 }
 
 pre,
