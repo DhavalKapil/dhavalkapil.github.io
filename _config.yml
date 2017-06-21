@@ -9,7 +9,7 @@ gems:
 permalink: blogs/:title/
 title: Dhaval Kapil
 email: me@dhavalkapil.com
-description: Blog of Dhaval Kapil, graduate student at Georgia Tech
+description: Website of Dhaval Kapil, graduate student at Georgia Tech
 keywords: dhaval, kapil, vampire, gatech, iit, roorkee, sdslabs, security, developer, geek, programmer, pianist, github
 baseurl: ""
 url: https://dhavalkapil.com
